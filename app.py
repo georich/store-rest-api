@@ -14,13 +14,6 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.secret_key = "123abc"  # Only visible because learning
 api = Api(app)
 
-
-@app.before_first_request
-def create_tables():
-    """Create the tables in the database before the first request occurs."""
-    db.create_all()
-
-
 jwt = JWT(app, authenticate, identity)  # creates /auth
 
 api.add_resource(Store, "/store/<string:name>")
