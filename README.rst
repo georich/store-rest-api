@@ -29,3 +29,4 @@ The steps taken to set up the DigitalOcean server took roughly this form:
  - Nginx was installed, firewall was activated and rules added for nginx and ssh.
  - Conf params were added to nginx, some files and folders were created to hold relevant files.
  - Repository cloned to the server and a virtualenv setup with required packages installed.
+ - uWSGI setup, a service was created using systemctl and uwsgi.ini was adjusted.
