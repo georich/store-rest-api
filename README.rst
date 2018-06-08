@@ -5,7 +5,7 @@ Store REST API
 Description
 -----------
 
-A store REST API to be uploaded to Heroku.
+A store REST API to be uploaded to Heroku and DigitalOcean.
 
 Packages
 --------
@@ -16,3 +16,10 @@ Heroku
 ------
 
 This app was uploaded to Heroku, both manual and automatic deployment were used. The database was also switched to use PostgreSQL and the corresponding addon was used to keep the database persistent. Since using SQLite would not achieve this.
+
+DigitalOcean
+------------
+
+ - A server running Ubuntu 18.04 was created, on this server psql and psql-contrib were installed.
+ - A new UNIX user was setup and given the power to enter password for root. SSH login via root was disabled and now will SSH via user and password.
+ - The UNIX user was given PostgreSQL permissions and had a db created for it.
