@@ -27,4 +27,5 @@ The steps taken to set up the DigitalOcean server took roughly this form:
  - The UNIX user was given PostgreSQL permissions and had a db created for it.
  - PostgreSQL was modified to require a password instead of accepting peer connections (required for SQLAlchemy and good practice).
  - Nginx was installed, firewall was activated and rules added for nginx and ssh.
- - Conf params were added to nginx, some files and folders were created to hole relevant files.
+ - Conf params were added to nginx, some files and folders were created to hold relevant files.
+ - Repository cloned to the server and a virtualenv setup with required packages installed.
