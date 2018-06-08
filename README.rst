@@ -20,7 +20,7 @@ This app was uploaded to Heroku, both manual and automatic deployment were used.
 DigitalOcean
 ------------
 
- - A server running Ubuntu 18.04 was created, on this server psql and psql-contrib were installed.
+ - A server running Ubuntu 18.04 was created, on this server postgresql and postgresql-contrib were installed.
  - A new UNIX user was setup and given the power to enter password for root. SSH login via root was disabled and now will SSH via user and password.
  - The UNIX user was given PostgreSQL permissions and had a db created for it.
  - PostgreSQL was modified to require a password instead of accepting peer connections (required for SQLAlchemy and good practice).
