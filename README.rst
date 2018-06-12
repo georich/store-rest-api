@@ -30,3 +30,8 @@ The steps taken to set up the DigitalOcean server took roughly this form:
 - Conf params were added to nginx, some files and folders were created to hold relevant files.
 - Repository cloned to the server and a virtualenv setup with required packages installed.
 - uWSGI setup, a service was created using systemctl and uwsgi.ini was adjusted.
+
+Security
+--------
+
+Flask-JWT is going to be replaced with Flask-JWT-extended a more up to date JWT package with some additional features.
