@@ -35,3 +35,4 @@ Security
 --------
 
 Flask-JWT is going to be replaced with Flask-JWT-extended a more up to date JWT package with some additional features.
+One of these important features is token refreshing, this way we can refresh the tokens instead of requiring the user to log in again.
